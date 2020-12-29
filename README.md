@@ -1,3 +1,15 @@
+## To run this application 
+1.Just the download the zip file
+2.open any of the terminal.
+3.cd into the home directory of the project
+4.Just type npm start to run the application(You must need to install nodeJs which comes with npm package manager )
+5.And the application is deployed in  your local machine at port 3000
+6.To view the application just open any of the browsers and go to Localhost:3000
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,7 +18,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+
+
 ### `npm start`
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
