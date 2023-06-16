@@ -26,7 +26,7 @@ phases:
       - docker pull 817424687730.dkr.ecr.us-east-1.amazonaws.com/testing1:latest
       - docker images
       - docker run --name "c1" -dt 817424687730.dkr.ecr.us-east-1.amazonaws.com/testing1:latest
-      - docker exec -it c1 sh
+      - docker exec c1 sh
       - git clone https://github.com/Venkypasala/weather-app.git
       - cd weather-app
       - npm install
