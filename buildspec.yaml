@@ -20,10 +20,11 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 817424687730.dkr.ecr.us-east-1.amazonaws.com
+      - echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin
   build:
     commands:
-      - docker login
       - docker pull 817424687730.dkr.ecr.us-east-1.amazonaws.com/testing1:latest
+      - docker images
       - docker run --name "c1" -dt testing1:latest
       - docker exec -it c1 sh
       - git clone https://github.com/Venkypasala/weather-app.git
