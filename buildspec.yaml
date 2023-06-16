@@ -15,6 +15,7 @@ phases:
       - aws configure set aws_access_key_id AKIA34USO4JZGVR3R7O2
       - aws configure set aws_secret_access_key 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
       - aws configure set default.region us-east-1
+      - sudo yum install -y net-tools
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
