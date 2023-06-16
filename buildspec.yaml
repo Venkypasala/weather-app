@@ -28,8 +28,8 @@ phases:
       - docker images
       - docker run --name "c1" -p 3000:3000 -dt 817424687730.dkr.ecr.us-east-1.amazonaws.com/testing1:latest
       - docker exec c1 sh
-      - git clone https://github.com/Venkypasala/weather-app.git
-      - cd weather-app
+      - git clone https://github.com/aditya-sridhar/simple-reactjs-app.git
+      - cd simple-reactjs-app
       - npm install
       - npm install -g pm2
       - pm2 start npm -- start
