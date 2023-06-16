@@ -32,7 +32,7 @@ phases:
       - cd weather-app
       - npm install
       - npm install -g pm2
-      - pm2 start weather -- start
+      - pm2 start npm -- start
       - pm2 status
       - exit
       - netstat -tunlp | grep 3000
